@@ -4,10 +4,10 @@ import pamqp.exceptions
 from aiormq.exceptions import (
     AMQPChannelError, AMQPConnectionError, AMQPError, AMQPException,
     AuthenticationError, ChannelClosed, ChannelInvalidStateError,
-    ChannelNotFoundEntity, ChannelPreconditionFailed, ConnectionClosed,
-    DeliveryError, DuplicateConsumerTag, IncompatibleProtocolError,
-    InvalidFrameError, MethodNotImplemented, ProbableAuthenticationError,
-    ProtocolSyntaxError, PublishError,
+    ChannelNotFoundEntity, ChannelPreconditionFailed, ConnectionChannelError,
+    ConnectionClosed, DeliveryError, DuplicateConsumerTag,
+    IncompatibleProtocolError, InvalidFrameError, MethodNotImplemented,
+    ProbableAuthenticationError, ProtocolSyntaxError, PublishError,
 )
 
 
@@ -40,6 +40,7 @@ __all__ = (
     "ChannelInvalidStateError",
     "ChannelNotFoundEntity",
     "ChannelPreconditionFailed",
+    "ConnectionChannelError",
     "ConnectionClosed",
     "DeliveryError",
     "DuplicateConsumerTag",
